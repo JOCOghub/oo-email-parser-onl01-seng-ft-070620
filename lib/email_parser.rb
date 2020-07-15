@@ -2,7 +2,7 @@ class EmailAddressParser
   attr_accessor :emails
   
   def self.parse(emails)
-    emails.split(/\,|\" "|/)
+    emails.split(/\,|\" "|/).uniq
   end   
 
 end
